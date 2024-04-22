@@ -1,0 +1,41 @@
+All software was built from the git sourcecode 
+rosdep did install dependencies as well though
+
+Setting Up ROS Iron Irwini
+https://docs.ros.org/en/iron/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html
+
+Setting Up RTAB-Map
+https://github.com/introlab/rtabmap_ros#rtabmap_ros
+
+Setting Up RTAB-Map_ROS
+https://github.com/introlab/rtabmap_ros/tree/ros2
+
+Setting Up Realsense
+https://dev.intelrealsense.com/docs/compiling-librealsense-for-linux-ubuntu-guide
+
+Setting Up Realsense ROS Wrapper
+https://dev.intelrealsense.com/docs/ros2-wrapper
+https://github.com/IntelRealSense/realsense-ros
+
+some tools so i dont need to type the same thing so often
+source ../setup_ros.sh
+source ../build_ros_workspace.sh 
+
+
+Other Websites to remember 
+https://introlab.github.io/rtabmap/
+https://wiki.ros.org/rtabmap_ros/Tutorials/
+
+CLI Run Commands Used :  
+
+For IMU Tools :
+ros2 run imu_filter_madgwick imu_filter_madgwick_node --ros-args -p use_mag:=false -p publish_tf:=false -p world_frame:="enu" -r /imu/data_raw:=/camera/camera/imu -r imu/data:=/rtabmap/imu
+
+For Realsense : 
+ros2 launch realsense2_camera rs_launch.py align_depth.enable:=true unite_imu_method:=1 enable_gyro:=true enable_accel:=true enable_sync:=true
+
+For RTAB_Map : 
+ros2 launch rtabmap_launch rtabmap.launch.py     rtabmap_args:="--delete_db_on_start"     rgb_topic:=/camera/camera/color/image_raw     depth_topic:=/camera/camera/aligned_depth_to_color/image_raw     camera_info_topic:=/camera/camera/color/camera_info     frame_id:=camera_link     approx_sync:=false     wait_imu_to_init:=true     imu_topic:=/rtabmap/imu     qos:=1     rviz:=true
+
+
+(I really should just make a launch file next)

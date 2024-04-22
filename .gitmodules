@@ -1,0 +1,28 @@
+[submodule "imu/src/imu_tools"]
+	path = imu/src/imu_tools
+	url = https://github.com/CCNYRoboticsLab/imu_tools
+	branch = humble
+[submodule "realsense/src/realsense-ros"]
+	path = realsense/src/realsense-ros
+	url = https://github.com/IntelRealSense/realsense-ros.git
+	branch = ros2-development
+[submodule "rtabmap"]
+	path = rtabmap
+	url = https://github.com/introlab/rtabmap.git
+	branch = iron-devel
+[submodule "slam/src/rtabmap_ros"]
+	path = slam/src/rtabmap_ros
+	url = https://github.com/introlab/rtabmap_ros.git
+	branch = ros2
+[submodule "turtlebot3/src/turtlebot3"]
+	path = turtlebot3/src/turtlebot3
+	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
+	branch = ros2-devel
+[submodule "turtlebot3/src/turtlebot3_simulations"]
+	path = turtlebot3/src/turtlebot3_simulations
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+	branch = ros2-devel
+[submodule "turtlebot3/src/turtlebot3_msgs"]
+	path = turtlebot3/src/turtlebot3_msgs
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+	branch = ros2-devel
