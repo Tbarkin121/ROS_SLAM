@@ -39,3 +39,5 @@ ros2 launch rtabmap_launch rtabmap.launch.py     rtabmap_args:="--delete_db_on_s
 
 
 (I really should just make a launch file next)
+
+Linux Kernal needs to be 5.15... one day ill figure out how to stop booting into 6.whatever

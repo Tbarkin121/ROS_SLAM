@@ -1,28 +1,40 @@
 [submodule "imu/src/imu_tools"]
-	path = imu/src/imu_tools
+	path = ros_modules/imu/src/imu_tools
 	url = https://github.com/CCNYRoboticsLab/imu_tools
 	branch = humble
 [submodule "realsense/src/realsense-ros"]
-	path = realsense/src/realsense-ros
+	path = ros_modules/realsense/src/realsense-ros
 	url = https://github.com/IntelRealSense/realsense-ros.git
 	branch = ros2-development
 [submodule "rtabmap"]
-	path = rtabmap
+	path = ros_modules/rtabmap
 	url = https://github.com/introlab/rtabmap.git
 	branch = iron-devel
+[submodule "rtabmap_ros/src/rtabmap_ros"]
+	path = ros_modules/rtabmap_ros/src/rtabmap_ros
+	url = https://github.com/introlab/rtabmap_ros.git
+	branch = ros2
+[submodule "turtlebot3/src/turtlebot3"]
+	path = ros_modules/turtlebot3/src/turtlebot3
+	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
+	branch = ros2-devel
+[submodule "turtlebot3/src/turtlebot3_simulations"]
+	path = ros_modules/turtlebot3/src/turtlebot3_simulations
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+	branch = ros2-devel
+[submodule "turtlebot3/src/turtlebot3_msgs"]
+	path = ros_modules/turtlebot3/src/turtlebot3_msgs
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+	branch = ros2-devel
+[submodule "slam/src/ros_modules/imu/src"]
+	path = slam/src/ros_modules/imu/src
+	url = https://github.com/CCNYRoboticsLab/imu_tools.git
+	branch = humble
+[submodule "slam/src/realsense-ros"]
+	path = slam/src/realsense-ros
+	url = https://github.com/IntelRealSense/realsense-ros.git
+	branch = ros2-development
 [submodule "slam/src/rtabmap_ros"]
 	path = slam/src/rtabmap_ros
 	url = https://github.com/introlab/rtabmap_ros.git
 	branch = ros2
-[submodule "turtlebot3/src/turtlebot3"]
-	path = turtlebot3/src/turtlebot3
-	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
-	branch = ros2-devel
-[submodule "turtlebot3/src/turtlebot3_simulations"]
-	path = turtlebot3/src/turtlebot3_simulations
-	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-	branch = ros2-devel
-[submodule "turtlebot3/src/turtlebot3_msgs"]
-	path = turtlebot3/src/turtlebot3_msgs
-	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-	branch = ros2-devel
